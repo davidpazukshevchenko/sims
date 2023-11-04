@@ -47,6 +47,9 @@ class Human:
         self.gladness -= self.job.gladness_less
         self.satiety -= 4
 
+    def get_computer(self):
+        self.car = Computer(computer_list)
+
     def shopping(self, manage):
         if not self.car.drive():
             if self.car.fuel < 20:
